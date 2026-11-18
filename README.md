@@ -89,3 +89,16 @@ paintUp-pwa/
 - [ ] **Phase 3 (Week 1 - Fri):** Database Design (ERD / `IndexedDB` Schema) & Mobile Wireframes
 - [ ] **Phase 4 (Weeks 2–4):** Iterative Feature Sprints (Estimator → Inventory → Team Management)
 - [ ] **Phase 5 (Week 5):** On-Site Testing, PWA Deployment & Engineering Case Study
+
+
+
+
+db.version(1).stores({
+ sites: 'siteId, siteName, status, createdAt, syncStatus',
+ workers: 'workerId, fullName, isActive, syncStatus',
+ attendance: 'attendanceId, siteId, workerId+date, status, syncStatus',
+ tasks: 'taskId, siteId, workerId, isCompleted, syncStatus',
+ inventoryItems: 'inventoryId, siteId, itemName, category, syncStatus'
+ estimates: 'estimateId, siteId, createdAt, syncStatus',
+ estimateItems: 'estimateItemId, estimateId, materialName'
+});
