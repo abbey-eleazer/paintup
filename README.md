@@ -85,20 +85,11 @@ paintUp-pwa/
 ## Development Roadmap
 
 - [x] **Phase 1 (Week 1 - Mon):** Planning, Hybrid SDLC Selection & Feasibility Analysis
-- [ ] **Phase 2 (Week 1 - Wed):** Requirements Specification & UML Use Case Diagram *(In Progress)*
-- [ ] **Phase 3 (Week 1 - Fri):** Database Design (ERD / `IndexedDB` Schema) & Mobile Wireframes
+- [x] **Phase 2 (Week 1 - Wed):** Requirements Specification & UML Use Case Diagram *(In Progress)*
+- [x] **Phase 3 (Week 1 - Fri):** Database Design (ERD / `IndexedDB` Schema) & Mobile Wireframes
 - [ ] **Phase 4 (Weeks 2–4):** Iterative Feature Sprints (Estimator → Inventory → Team Management)
 - [ ] **Phase 5 (Week 5):** On-Site Testing, PWA Deployment & Engineering Case Study
 
 
 
 
-db.version(1).stores({
- sites: 'siteId, siteName, status, createdAt, syncStatus',
- workers: 'workerId, fullName, isActive, syncStatus',
- attendance: 'attendanceId, siteId, workerId+date, status, syncStatus',
- tasks: 'taskId, siteId, workerId, isCompleted, syncStatus',
- inventoryItems: 'inventoryId, siteId, itemName, category, syncStatus'
- estimates: 'estimateId, siteId, createdAt, syncStatus',
- estimateItems: 'estimateItemId, estimateId, materialName'
-});
