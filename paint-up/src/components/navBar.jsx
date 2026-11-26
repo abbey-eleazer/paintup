@@ -10,7 +10,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full flex items-center justify-center px-4 ">
+      <nav className="w-full flex justify-end items-center px-4 ">
         <ul className="flex gap-2 justify-between items-center w-full text-center">
           <NavLink to="/estimate" className={getNavClass}>
             <li>Estimate</li>
